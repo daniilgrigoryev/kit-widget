@@ -1,0 +1,28 @@
+{
+  "title": "Title",
+  "at": "at",
+  "today": "Today",
+  "enter_message": "Enter message",
+  "attach_file": "Attach a file",
+  "name": "Name",
+  "email": "Email",
+  "max_length": "Maximum length is 100 symbols",
+  "invalid_email": "This email is invalid",
+  "empty_field": "Field cannot be blank",
+  "auth_title": "Start conversation",
+  "auth_subtitle": "One of our agents will contact you shortly",
+  "auth_btn": "Get started",
+  "policy": "By clicking \"Get started\", I confirm that I have read and agreed to the ",
+  "policy_link": "<a href='https://voximplant.com/legal/privacy' rel='noreferrer noopenner' target='_blank'>Privacy Policy.</a>",
+  "file_size_kb": "KB",
+  "file_size_mb": "MB",
+  "loading": {
+    "title": {
+      "uploading": "Uploading {n} file of {a} | Uploading {n} files of {a}",
+      "completed": "Upload {n} files",
+      "error": "Loading error",
+      "processing": "Processing ...",
+      "toManyFiles": "You can upload 10 files at a time."
+    }
+  }
+}

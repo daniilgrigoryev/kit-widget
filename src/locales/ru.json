@@ -1,0 +1,28 @@
+{
+  "title": "Заголовок",
+  "at": "в",
+  "today": "Сегодня",
+  "enter_message": "Введите сообщение",
+  "attach_file": "Прикрепить файл",
+  "name": "Имя",
+  "email": "Эл. почта",
+  "max_length": "Максимальная длина 100 символов",
+  "invalid_email": "Неверный адрес почты",
+  "empty_field": "Поле не может быть пустым",
+  "auth_title": "Начать разговор",
+  "auth_subtitle": "Один из наших агентов свяжется с вами в ближайшее время",
+  "auth_btn": "Начать",
+  "policy": "Нажав кнопку \"Начать\", я подтверждаю, что прочитал и согласился c ",
+  "policy_link": "<a href='https://kit-eu.voximplant.com/static/policy_data.pdf' rel='noreferrer noopenner' target='_blank'>Политикой конфиденциальности.</a>",
+  "file_size_kb": "KB",
+  "file_size_mb": "MB",
+  "loading": {
+    "title": {
+      "uploading": "Загрузка {n} файла | Загрузка {n} файлов | Загрузка {n} файлов",
+      "completed": "Загружено {n} файла",
+      "error": "Ошибка загрузки",
+      "processing": "Oбработка ...",
+      "toManyFiles": "Вы можете загружать 10 файлов за раз."
+    }
+  }
+}

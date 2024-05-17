@@ -1,0 +1,113 @@
+ .vox-tooltip {
+    display: block !important;
+    z-index: 2000;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    line-height: 20px;
+
+    &.pre--line {
+      white-space: pre-line;
+    }
+
+   .tooltip-inner {
+     max-width: 500px;
+     padding: 8px 10px;
+     background: var(--gray-90);
+     color: var(--white-base);
+     word-wrap: break-word;
+     border-radius: 8px;
+   }
+
+   .tooltip-arrow {
+     position: absolute;
+     z-index: 1;
+     width: 10px;
+     height: 10px;
+     margin: 4px;
+     background: var(--gray-90);
+     border: none !important;
+     border-radius: 2px;
+     transform: rotate(45deg);
+   }
+
+   .tooltip[x-placement^='top'] {
+     margin-bottom: 4px;
+   }
+
+   .tooltip[x-placement^='top'] .tooltip-arrow {
+     bottom: -4px;
+     left: calc(50% - 4px);
+     margin-top: 0;
+     margin-bottom: 0;
+   }
+
+   .tooltip[x-placement^='bottom'] {
+     margin-top: 5px;
+   }
+
+   .tooltip[x-placement^='bottom'] .tooltip-arrow {
+     top: -4px;
+     left: calc(50% - 4px);
+     margin-top: 0;
+     margin-bottom: 0;
+   }
+
+   .tooltip[x-placement^='right'] {
+     margin-left: 4px;
+   }
+
+   .tooltip[x-placement^='right'] .tooltip-arrow {
+     top: calc(50% - 4px);
+     left: -4px;
+     margin-right: 0;
+     margin-left: 0;
+   }
+
+   .tooltip[x-placement^='left'] {
+     margin-right: 4px;
+   }
+
+   .tooltip[x-placement^='left'] .tooltip-arrow {
+     top: calc(50% - 4px);
+     right: -4px;
+     margin-right: 0;
+     margin-left: 0;
+   }
+   .tooltip[aria-hidden='true'] {
+     visibility: hidden;
+     opacity: 0;
+     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+   }
+
+   .tooltip[aria-hidden='false'] {
+     visibility: visible;
+     opacity: 1;
+     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+   }
+
+   .tooltip-copy {
+     display: inline-block;
+     width: 14px;
+     height: 14px;
+     margin-left: 7px;
+     background: #fff;
+     vertical-align: middle;
+     cursor: pointer;
+   }
+   .popper-inner {
+     padding: 16px;
+     background: var(--white-base);
+     color: var(--gray-90);
+     border-radius: 8px;
+     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+   }
+
+   .popper-arrow {
+     background: var(--white-base);
+   }
+ }
+
+
+
+
+

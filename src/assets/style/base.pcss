@@ -1,0 +1,137 @@
+/* активация  virtual-keyboard глобально */
+html{
+  virtual-keyboard: overlays-content;
+}
+/* #kit добавлен чтобы не ломать верстку в Storybook */
+html#kit {
+  /* иначе онбординг интеркома растягивает страницу и появляется скролл там, где не должен */
+  overflow: hidden;
+}
+body.disable-scroll{
+  overflow: hidden;
+}
+.kit-widget-container *,
+.kit-widget-gallery * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.kit-widget-container,
+.kit-widget-gallery{
+  color: var(--gray-90);
+  font-family: var(--font-primary);
+}
+.kit-widget-container,
+.kit-widget-gallery{
+  table {
+    border-collapse: collapse;
+  }
+
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  img,
+  svg {
+    max-height: 100%;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  input,
+  textarea {
+    font-family: inherit;
+    border: none;
+
+    &[disabled] {
+      background-color: transparent;
+      cursor: inherit;
+    }
+  }
+
+  .icon-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexspace {
+    flex: 1 0;
+  }
+
+  .view-container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .main-part {
+    /*padding: 18px 32px 0 32px;*/
+    width: 100%;
+    background-color: var(--white-base);
+  }
+
+  .with-padding {
+    padding: 0 32px;
+  }
+
+  .with-negative-margin {
+    margin-top: -18px;
+  }
+
+  /* Стили для линка в поппере */
+
+  span,
+  a {
+    &.link-in-popper {
+      color: var(--gray-20);
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 20px;
+      text-decoration: underline;
+      cursor: pointer;
+
+      &:hover {
+        color: var(--gray-30);
+      }
+    }
+  }
+
+  /* Стили который надо навешивать на родителя с ссылкой внутри tooltip'a*/
+
+  .link-in-tooltip {
+    a {
+      color: var(--gray-20);
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 20px;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a:hover {
+      color: var(--gray-30);
+    }
+  }
+}
